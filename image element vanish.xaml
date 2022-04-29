@@ -1,0 +1,119 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="image_element_vanish" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="739,746" sap2010:WorkflowViewState.IdRef="image_element_vanish_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="image_element_vanish" sap:VirtualizedContainerService.HintSize="476,681" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="434,589" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="461a86c56c20a5b8df8054cfaec15ddf" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,443" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WaitImageVanish DisplayName="Wait Image Vanish 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageVanish_1">
+              <ui:WaitImageVanish.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+              </ui:WaitImageVanish.Image>
+              <ui:WaitImageVanish.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="781938a7-5e3e-4d65-8a6d-61248d718440">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:WaitImageVanish.Target>
+            </ui:WaitImageVanish>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;image gone..go home!&quot;]" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d2179d7-62c9-4c28-8456-24928b1e4cb6" InformativeScreenshot="b166955b8e7a82e450ad41d15c195782" Selector="&lt;webctrl aaname='Home' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
